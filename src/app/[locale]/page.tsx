@@ -1,4 +1,3 @@
-
 import Header from "@/components/ui/header/header";
 import Footer from "@/components/ui/footer/footer";
 import TypingHero from "@/components/ui/hero/typing-hero";
@@ -7,7 +6,7 @@ import Experience from "@/components/ui/experience";
 import Projects from "@/components/ui/projects";
 import About from "@/components/ui/about";
 
-export default async function HomePage() {
+export default function HomePage() {
   return (
     <div className="bg-gray-900">
       <div className="min-h-screen flex flex-col">

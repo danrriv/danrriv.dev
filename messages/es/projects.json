@@ -1,0 +1,98 @@
+{
+  "Projects": {
+    "title": "Proyectos destacados",
+    "work_label": "Trabajo",
+    "personal_label": "Personal",
+    "work": [
+      {
+        "title": "Titilaka",
+        "description": "Sitio web para uno de los hoteles de Andean, cuenta con integraciones de <selfbook>Selfbook</selfbook> y <salesiq>Zoho SalesIQ.</salesiq>",
+        "highlights": "Modernizó el sitio, anteriormente hecho en un CMS",
+        "tech": [
+          "Astro",
+          "Tailwind CSS"
+        ],
+        "image": "",
+        "website": "https://titilaka.pe",
+        "repository": ""
+      },
+      {
+        "title": "Travel Professional's Site",
+        "description": "Plataforma para agentes B2B y prensa, para Andean. Usa como middleware Spring Boot para manejar la lógica de negocio y autenticación, además de integrar <sanity>Sanity</sanity> como CMS.",
+        "highlights": "Integración de Headless CMS y uso de middleware",
+        "tech": [
+          "Angular",
+          "Spring Boot",
+          "Sanity"
+        ],
+        "image": "",
+        "website": "https://info.andean.travel",
+        "repository": ""
+      },
+      {
+        "title": "Libro de Reclamaciones",
+        "description": "Libro de reclamaciones para Andean, digitalizó el proceso además de cumplir con las normativas e incluir localización.",
+        "highlights": "Digitalización de procesos y cumplimiento normativo",
+        "tech": [
+          "Angular",
+          "Spring Boot"
+        ],
+        "image": "",
+        "website": "https://libroreclamaciones.andean.travel/",
+        "repository": ""
+      },
+      {
+        "title": "Intranet",
+        "description": "Intranet modular para Andean, de uso interno diseñada para escalar y cubrir procesos internos de diferentes áreas.",
+        "highlights": "Modular y escalable",
+        "tech": [
+          "Angular",
+          "Spring Boot"
+        ],
+        "image": "",
+        "website": "",
+        "repository": ""
+      }
+    ],
+    "personal": [
+      {
+        "title": "Buscador Giphy",
+        "description": "Un buscador de GIFs simple construido con la <giphy>API de Giphy</giphy>. Incluye historial de búsqueda, cambio de idioma, y fue creado originalmente para una prueba técnica.",
+        "highlights": "External API integration",
+        "tech": [
+          "Angular",
+          "Giphy API"
+        ],
+        "image": "",
+        "website": "https://buscador-giphy.vercel.app",
+        "repository": "https://github.com/danrriv/Buscador_Giphy"
+      },
+      {
+        "title": "DSTR-Santa-Natura",
+        "description": "Sistema de ventas e inventario para un negocio local, realizado en conjunto con <merdarko>MerDark0</merdarko>, tomando como guía el proyecto de <codigo>Codigo Estudiante</codigo>.",
+        "highlights": "SEO optimized and fast loading",
+        "tech": [
+          ".NET",
+          "SQL Server",
+          "Win Forms"
+        ],
+        "image": "",
+        "website": "",
+        "repository": "https://github.com/danrriv/DSTR-Santa-Natura"
+      },
+      {
+        "title": "Este sitio <tooltip>(?)</tooltip>",
+        "description": "Portafolio/Web personal desarrollada como práctica de Nextjs, le agregue la integración de <spotify>Spotify</spotify>.. porque sí.",
+        "highlights": "Es open source; si te gusta, puedes usarlo como plantilla. :)",
+        "tech": [
+          "Next.js",
+          "Tailwind CSS",
+          "Spotify API"
+        ],
+        "image": "",
+        "website": "",
+        "repository": "https://github.com/danrriv/danrriv.dev"
+      }
+    ]
+  }
+}

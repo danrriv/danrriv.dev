@@ -1,45 +1,21 @@
+import { useTranslations } from "next-intl";
+
+//types
+interface Role {
+  position: string;
+  period: string;
+  responsibilities: string[];
+}
+
+interface ExperienceItem {
+  company: string;
+  website: string;
+  roles: Role[];
+}
+
 export default function Experience() {
-    const experiences = [
-        {
-            company: "Andean",
-            website: "https://andean.travel",
-            roles: [
-                {
-                    position: "Digital Transformation Assistant",
-                    period: "May 2025 - Present",
-                    achievements: [
-                        "Developing and maintaining internal platforms using Angular and Spring Boot",
-                        "Leading improvements in code quality, documentation, and architecture",
-                        "Collaborating with cross-functional teams to automate internal workflows",
-                    ],
-                },
-                {
-                    position: "IT Intern",
-                    period: "Nov 2024 - May 2025",
-                    achievements: [
-                        "Implemented new internal tools that improved operational efficiency",
-                        "Optimized PostgreSQL queries and structures for better performance",
-                        "Supported the development of backend modules and REST APIs",
-                    ],
-                },
-            ],
-        },
-        {
-            company: "Hard Discount (Mass)",
-            website: "https://www.tiendasmass.com.pe",
-            roles: [
-                {
-                    position: "Retail Cashier - Inventory",
-                    period: "Sep 2023 - Jul 2024",
-                    achievements: [
-                        "Handled cashier operations with accuracy and customer service",
-                        "Assisted with inventory reception, stock organization, and product labeling",
-                        "Maintained store order and supported day-to-day operational tasks",
-                    ],
-                },
-            ],
-        },
-    ];
+    const t = useTranslations('Experience');
+    const experiences = t.raw('experiences') as ExperienceItem[];
 
     return (
         <section id="experience" className="py-20">
@@ -49,7 +25,7 @@ export default function Experience() {
                 <div className="flex items-center gap-3 mb-12">
                     <h2 className="text-2xl sm:text-3xl font-bold flex items-center gap-3">
                         <span className="flex items-center justify-center text-base w-8 h-8">■</span>
-                        Experience
+                        {t('title')}
                     </h2>
                     <div className="flex-1">
                         <hr className="border-gray-800 w-full" />
@@ -92,14 +68,14 @@ export default function Experience() {
                                                 </span>
                                             </div>
 
-                                            {/* Logros */}
-                                            <ul className="space-y-2">
-                                                {role.achievements.map((a, aidx) => (
+                                            {/* Responsabilidades */}
+                                            <ul className="space-y-3">
+                                                {role.responsibilities.map((a, aidx) => (
                                                     <li
                                                         key={aidx}
                                                         className="text-sm text-foreground/70 flex gap-3"
                                                     >
-                                                        <span className="text-primary mt-1">•</span>
+                                                        <span className="text-primary">•</span>
                                                         <span>{a}</span>
                                                     </li>
                                                 ))}

@@ -1,8 +1,12 @@
 "use client"
 
+import { useTranslations } from "next-intl"
 import { useState, useEffect } from "react"
 
 export default function TypingHero() {
+  /* Translation */
+  const t = useTranslations('Hero')
+
   const [text, setText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
   const [loopIndex, setLoopIndex] = useState(0)
@@ -58,7 +62,7 @@ export default function TypingHero() {
       <div className="max-w-7xl px-6 sm:px-8 lg:px-14">
         <div className="grid sm:grid-cols-4 items-center">
           <div className="col-span-3">
-            
+
             <h1 className="text-[clamp(2.5rem,5vw+1.5rem,4.5rem)] font-bold leading-tight mb-2 whitespace-nowrap">
               Hi, I'm&nbsp;
               <span className="relative inline-block">
@@ -67,11 +71,12 @@ export default function TypingHero() {
             </h1>
 
             <h2 className="text-base sm:text-2xl text-gray-400 text-muted-foreground mb-6 sm:mb-8">
-              Full-Stack Web Developer <span className="text-xs italic">[for now]</span>
+              {t.rich('role', {
+                italic: (chunks) => <span className="italic text-xs">{chunks}</span>
+              })}
             </h2>
-
             <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-              I'm a software developer. I enjoy challenges, solving complex problems creatively, turning ideas into simple, reliable solutions, and improving a little with every project.
+              {t('intro')}
             </p>
           </div>
         </div>

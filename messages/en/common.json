@@ -1,0 +1,19 @@
+{
+    "HomePage": {
+        "title": "Hello world!"
+    },
+    "Hero": {
+        "greeting": "Hi, I'm ",
+        "role": "Desarrollador Web Full-Stack <italic>[por ahora]</italic>",
+        "intro": "Soy un desarrollador de software. Disfruto de los desafíos, resolver problemas complejos de manera creativa, convertir ideas en soluciones simples y confiables, y mejorar un poco con cada proyecto."
+    },
+    "NavSticky": {
+        "experience": "Experience",
+        "projects": "Projects",
+        "about": "About"
+    },
+    "Footer": {
+        "built": "Hecho por <link>danrriv</link> con Nextjs y Tailwind CSS. :) ",
+        "contact": "Get in touch"
+    }
+}

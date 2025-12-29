@@ -1,0 +1,46 @@
+{
+    "Experience": {
+        "title": "Experiencia",
+        "experiences": [
+            {
+                "company": "Andean",
+                "website": "https://andean.travel",
+                "roles": [
+                    {
+                        "position": "Auxiliar de Transformación Digital",
+                        "period": "May 2025 - Present",
+                        "responsibilities": [
+                            "Developed and maintained internal tools using Java and Spring Boot, improving operational efficiency by 20%.",
+                            "Collaborated with cross-functional teams to gather requirements and deliver technical solutions that met business needs.",
+                            "Provided technical support and training to end-users, enhancing user satisfaction and reducing downtime."
+                        ]
+                    },
+                    {
+                        "position": "Practicante de Sistemas",
+                        "period": "Nov 2024 - May 2025",
+                        "responsibilities": [
+                            "Assisted in the development of web applications using JavaScript and React, contributing to a 15% increase in user engagement.",
+                            "Participated in code reviews and team meetings, gaining valuable insights into software development best practices.",
+                            "Conducted testing and debugging of applications, ensuring high-quality deliverables."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "Hard Discount (Mass)",
+                "website": "https://www.tiendasmass.com.pe",
+                "roles": [
+                    {
+                        "position": "Multifuncional",
+                        "period": "Sep 2023 - Jul 2024",
+                        "responsibilities": [
+                            "Provided technical support to over 200 employees, resolving hardware and software issues promptly.",
+                            "Maintained IT inventory and assisted in the setup of new workstations, improving onboarding efficiency.",
+                            "Documented common issues and solutions, creating a knowledge base that reduced repeat inquiries by 25%."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

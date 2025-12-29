@@ -1,8 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function NavSticky() {
+    const t = useTranslations('NavSticky');
 
     const [show, setShow] = useState(true);
     const [lastY, setLastY] = useState(0);
@@ -42,7 +44,7 @@ export default function NavSticky() {
             className={`
         fixed top-6 left-1/2 -translate-x-1/2 rounded-full
         transition-all duration-300 backdrop-blur-sm
-        h-9 flex items-center gap-5 text-sm px-4
+        h-8 flex items-center gap-5 text-sm px-4 z-50
 
         ${preActivated
                     ? 'bg-white/80 dark:bg-gray-600/80'
@@ -57,9 +59,14 @@ export default function NavSticky() {
                 }
     `}
         >
-            <Link href="#experience" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Experience</Link>
-            <Link href="#projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Work</Link>
-            <Link href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">About</Link>
+            <Link href="#experience" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">{t('experience')}</Link>
+            <Link href="#projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">{t('projects')}</Link>
+            <Link
+                href="#about"
+                className="whitespace-nowrap text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+            >
+                {t('about')}
+            </Link>
         </nav>
     );
 }

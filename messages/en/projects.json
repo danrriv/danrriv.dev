@@ -1,0 +1,88 @@
+{
+  "Projects": {
+    "title": "Some of my projects",
+    "work_label": "Work",
+    "personal_label": "Personal",
+    "work": [
+      {
+        "title": "Titilaka",
+        "description": "Fullstack application for managing users and permissions with an intuitive and secure interface.",
+        "highlights": "Granular access control implementation",
+        "tech": [
+          "Astro",
+          "Tailwind CSS"
+        ],
+        "image": "",
+        "website": "https://titilaka.pe",
+        "repository": ""
+      },
+      {
+        "title": "Travel Professional's Site",
+        "description": "Analytics dashboard with real-time data visualization and exportable reports.",
+        "highlights": "Processing 100k+ records with query optimization",
+        "tech": [
+          "Astro",
+          "Tailwind CSS"
+        ],
+        "image": "",
+        "website": "https://info.andean.travel",
+        "repository": ""
+      },
+      {
+        "title": "Complaints Book",
+        "description": "Microservices architecture with Spring Boot focused on performance and scalability.",
+        "highlights": "Distributed caching and rate limiting",
+        "tech": [
+          "Spring Boot"
+        ],
+        "image": "",
+        "website": "https://info.andean.travel",
+        "repository": ""
+      },
+      {
+        "title": "Intranet",
+        "description": "Modern frontend application with complex forms and advanced validations.",
+        "highlights": "Reusable components and shared state",
+        "tech": [
+          "Astro",
+          "Tailwind CSS"
+        ],
+        "image": "",
+        "website": "https://info.andean.travel",
+        "repository": ""
+      }
+    ],
+    "personal": [
+      {
+        "title": "Giphy Searcher",
+        "description": "A simple GIF search engine built with the <link href='https://developers.giphy.com'>Giphy API</link>. It includes search history, language switching, and was originally created for a technical test.",
+        "highlights": "External API integration",
+        "tech": [
+          "Angular",
+          "Giphy API"
+        ],
+        "image": "",
+        "website": "https://buscador-giphy.vercel.app",
+        "repository": "https://github.com/danrriv/Buscador_Giphy"
+      },
+      {
+        "title": "DSTR-Santa-Natura",
+        "description": "Dynamic blog with content editor, categories, and comment system.",
+        "highlights": "SEO optimized and fast loading",
+        "tech": [],
+        "image": "",
+        "website": "",
+        "repository": ""
+      },
+      {
+        "title": "This site <tooltip>(?)</tooltip>",
+        "description": "Productivity application with real-time collaboration and synchronization.",
+        "highlights": "It's open source; if you liked it, you can use it as a template. :)",
+        "tech": [],
+        "image": "",
+        "website": "",
+        "repository": ""
+      }
+    ]
+  }
+}
