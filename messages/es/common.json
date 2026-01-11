@@ -1,19 +1,21 @@
 {
-    "HomePage": {
-        "title": "Hola Mundo!"
-    },
     "Hero": {
-        "greeting": "Hi, I'm ",
+        "greeting": "Hola, soy",
         "role": "Desarrollador Web Full-Stack <italic>[por ahora]</italic>",
-        "intro": "Soy un desarrollador de software. Disfruto de los desafíos, resolver problemas complejos de manera creativa, convertir ideas en soluciones simples y confiables, y mejorar un poco con cada proyecto."
+        "intro": "Soy un desarrollador de software. Disfruto de los desafíos, resolver problemas complejos de manera creativa, convertir ideas en soluciones simples y confiables, y mejorar un poco con cada proyecto.",
+        "cta": "Revisa mi trabajo!"
     },
     "NavSticky": {
+        "display": {
+            "experience": "experiencia",
+            "projects": "proyectos",
+            "about": "sobre-mí"
+        },
         "experience": "Experiencia",
         "projects": "Proyectos",
         "about": "Sobre mí"
     },
     "Footer": {
-        "built": "Hecho por <link>danrriv</link> con Nextjs. :) ",
-        "contact": "Get in touch"
+        "built": "Hecho por <link>danrriv</link> con Nextjs. "
     }
 }

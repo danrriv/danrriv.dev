@@ -6,7 +6,7 @@
     "work": [
       {
         "title": "Titilaka",
-        "description": "Sitio web para uno de los hoteles de Andean, cuenta con integraciones de <selfbook>Selfbook</selfbook> y <salesiq>Zoho SalesIQ.</salesiq>",
+        "description": "Sitio web para uno de las propiedades de Andean, cuenta con integraciones de <selfbook>Selfbook</selfbook> y <salesiq>Zoho SalesIQ.</salesiq>",
         "highlights": "Modernizó el sitio, anteriormente hecho en un CMS",
         "tech": [
           "Astro",
@@ -44,7 +44,7 @@
       {
         "title": "Intranet",
         "description": "Intranet modular para Andean, de uso interno diseñada para escalar y cubrir procesos internos de diferentes áreas.",
-        "highlights": "Modular y escalable",
+        "highlights": "Arquitectura modular y escalable, orientada a microservicios",
         "tech": [
           "Angular",
           "Spring Boot"
@@ -58,7 +58,7 @@
       {
         "title": "Buscador Giphy",
         "description": "Un buscador de GIFs simple construido con la <giphy>API de Giphy</giphy>. Incluye historial de búsqueda, cambio de idioma, y fue creado originalmente para una prueba técnica.",
-        "highlights": "External API integration",
+        "highlights": "Integración de API de terceros",
         "tech": [
           "Angular",
           "Giphy API"
@@ -70,7 +70,7 @@
       {
         "title": "DSTR-Santa-Natura",
         "description": "Sistema de ventas e inventario para un negocio local, realizado en conjunto con <merdarko>MerDark0</merdarko>, tomando como guía el proyecto de <codigo>Codigo Estudiante</codigo>.",
-        "highlights": "SEO optimized and fast loading",
+        "highlights": "Manejo de ventas e inventario",
         "tech": [
           ".NET",
           "SQL Server",
@@ -81,8 +81,8 @@
         "repository": "https://github.com/danrriv/DSTR-Santa-Natura"
       },
       {
-        "title": "Este sitio <tooltip>(?)</tooltip>",
-        "description": "Portafolio/Web personal desarrollada como práctica de Nextjs, le agregue la integración de <spotify>Spotify</spotify>.. porque sí.",
+        "title": "Portafolio/Web personal <tooltip>(?)</tooltip>",
+        "description": "Sitio desarrollado como práctica de Nextjs, le agregue conexión con <spotify>Spotify</spotify> para probar que tal va. Trae datos personales del perfil como top mensual, y últimas canciones escuchadas.",
         "highlights": "Es open source; si te gusta, puedes usarlo como plantilla. :)",
         "tech": [
           "Next.js",

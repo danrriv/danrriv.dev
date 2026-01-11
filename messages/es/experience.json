@@ -8,20 +8,20 @@
                 "roles": [
                     {
                         "position": "Auxiliar de Transformación Digital",
-                        "period": "May 2025 - Present",
+                        "period": "May 2025 - Presente",
                         "responsibilities": [
-                            "Developed and maintained internal tools using Java and Spring Boot, improving operational efficiency by 20%.",
-                            "Collaborated with cross-functional teams to gather requirements and deliver technical solutions that met business needs.",
-                            "Provided technical support and training to end-users, enhancing user satisfaction and reducing downtime."
+                            "Desarrolle y mantuve sistemas internos utilizando Spring Boot y Angular, dando nuevas opciones tecnológicas a la empresa.",
+                            "Actualicé soluciones anteriores en la empresa, mejorando la imagen digital además de ahorrar en costos de desarrollo.",
+                            "Gestioné un VPS interno (Windows Server), además de realizar configuraciones de CI/CD para los proyectos internos."
                         ]
                     },
                     {
                         "position": "Practicante de Sistemas",
                         "period": "Nov 2024 - May 2025",
                         "responsibilities": [
-                            "Assisted in the development of web applications using JavaScript and React, contributing to a 15% increase in user engagement.",
-                            "Participated in code reviews and team meetings, gaining valuable insights into software development best practices.",
-                            "Conducted testing and debugging of applications, ensuring high-quality deliverables."
+                            "Brindé soporte técnico a usuarios finales, resolviendo problemas de hardware y software de manera eficiente.",
+                            "Realice el inventario de equipos tecnologicos, además de tareas administrativas como el envío de facturas.",
+                            "Digitalicé un proceso en la empresa, mejorando la eficiencia operativa (Libro de Reclamaciones)."
                         ]
                     }
                 ]
@@ -34,9 +34,9 @@
                         "position": "Multifuncional",
                         "period": "Sep 2023 - Jul 2024",
                         "responsibilities": [
-                            "Provided technical support to over 200 employees, resolving hardware and software issues promptly.",
-                            "Maintained IT inventory and assisted in the setup of new workstations, improving onboarding efficiency.",
-                            "Documented common issues and solutions, creating a knowledge base that reduced repeat inquiries by 25%."
+                            "Recepcionaba mercadería de los proveedores, cotejando las guías de entrada, además del ingreso de las mismas y gestión de inventarios diarios.",
+                            "Contaba con buen trato hacia los clientes, fidelizando a los mismos, además de promover la venta de loterías.",
+                            "Conseguí una bonificación al destacar en la promoción de loterías,llegando a los mejores de la zona."
                         ]
                     }
                 ]

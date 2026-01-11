@@ -3,25 +3,25 @@
         "title": "Experience",
         "experiences": [
             {
-                "company": "Transformación Digital",
+                "company": "Andean",
                 "website": "https://andean.travel",
                 "roles": [
                     {
                         "position": "Digital Transformation Assistant",
                         "period": "May 2025 - Present",
                         "responsibilities": [
-                            "Developed and maintained internal tools using Java and Spring Boot, improving operational efficiency by 20%.",
-                            "Collaborated with cross-functional teams to gather requirements and deliver technical solutions that met business needs.",
-                            "Provided technical support and training to end-users, enhancing user satisfaction and reducing downtime."
+                            "Developed and maintained internal systems using Spring Boot and Angular, introducing new technological solutions to the company.",
+                            "Upgraded legacy solutions within the company, improving its digital presence while reducing development costs.",
+                            "Managed an internal VPS and configured CI/CD pipelines for internal projects."
                         ]
                     },
                     {
                         "position": "IT Intern",
                         "period": "Nov 2024 - May 2025",
                         "responsibilities": [
-                            "Assisted in the development of web applications using JavaScript and React, contributing to a 15% increase in user engagement.",
-                            "Participated in code reviews and team meetings, gaining valuable insights into software development best practices.",
-                            "Conducted testing and debugging of applications, ensuring high-quality deliverables."
+                            "Provided technical support to end users, efficiently resolving hardware and software issues.",
+                            "Managed technology asset inventory, along with administrative tasks such as invoice processing.",
+                            "Digitized a company process, improving operational efficiency (Complaints Book)."
                         ]
                     }
                 ]
@@ -34,9 +34,9 @@
                         "position": "Retail Cashier - Inventory",
                         "period": "Sep 2023 - Jul 2024",
                         "responsibilities": [
-                            "Provided technical support to over 200 employees, resolving hardware and software issues promptly.",
-                            "Maintained IT inventory and assisted in the setup of new workstations, improving onboarding efficiency.",
-                            "Documented common issues and solutions, creating a knowledge base that reduced repeat inquiries by 25%."
+                            "Received merchandise from suppliers, verified delivery notes, recorded entries, and managed daily inventory.",
+                            "Provided excellent customer service, building customer loyalty and promoting lottery sales.",
+                            "Earned a performance bonus by standing out in lottery promotion, ranking among the top performers in the area."
                         ]
                     }
                 ]

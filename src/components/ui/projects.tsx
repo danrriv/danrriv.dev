@@ -3,28 +3,55 @@
 import { useState } from "react"
 import { useTranslations } from "next-intl"
 import CustomLink from "../link"
+import { AnimatePresence, motion } from "motion/react"
 
 
 export default function Projects() {
     const [activeTab, setActiveTab] = useState<"work" | "personal">("personal")
     const t = useTranslations('Projects')
+    const n = useTranslations('NavSticky')
 
-    // next-intl permite obtener el array completo de objetos
-
-    // Obtenemos los proyectos según el tab activo
-    // Usamos t.raw para obtener la estructura del array y mapearla
     const currentProjects = t.raw(activeTab) as any[];
 
+    const containerVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                staggerChildren: 0.2 // Retraso entre cada tarjeta
+            }
+        }
+    }
+
+    // Variantes para cada tarjeta
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.8 }
+        }
+    }
+
     return (
-        <section id="projects" className="py-20">
+        <section id={n('display.projects')} className="py-20">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl text-center font-bold mb-8">{t('title')}</h2>
+                <motion.h2
+                    initial={{ opacity: 0, x: -30 }}
+                    transition={{ duration: 0.8 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="text-3xl md:text-center font-bold mb-8"
+                >
+                    <span className="text-teal-500 text-lg font-mono">02.</span> {t('title')}
+                </motion.h2>
 
                 <div className="relative mb-12 w-max">
                     <span
                         className="absolute bottom-0 left-0 h-0.5 bg-teal-500 transition-all duration-300"
                         style={{
-                            width: activeTab === "personal" ? "100px" : "65px",
+                            width: activeTab === "personal" ? "100px" : "85px",
                             transform: activeTab === "personal" ? "translateX(0)" : "translateX(100px)",
                         }}
                     />
@@ -45,73 +72,78 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                    {currentProjects.map((_, idx) => (
-                        <div
-                            key={idx}
-                            className="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-all duration-300 group"
-                        >
-                            <div className="flex justify-between items-center mb-10">
-                                {/* t.rich para el título por si tiene el <tooltip> */}
-                                <h3 className="text-xl font-bold group-hover:text-teal-500 transition-colors">
-                                    {t.rich(`${activeTab}.${idx}.title`, {
-                                        tooltip: (chunks) => (
-                                            <span className="text-xs inline-block transition-transform duration-300 hover:rotate-360 hover:cursor-help">
-                                                {chunks}
-                                            </span>
-                                        )
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                    key={activeTab} // El key hace que se re-anime al cambiar de tab
+                    className="grid md:grid-cols-2 gap-6"
+                >
+                    <AnimatePresence mode="popLayout">
+                        {currentProjects.map((_, idx) => (
+                            <motion.div
+                                key={`${activeTab}-${idx}`} // Key único por tab e índice
+                                variants={itemVariants}
+                                layout // Suaviza el movimiento si las tarjetas cambian de posición
+                                className="bg-gray-800 rounded-lg p-6 hover:-translate-y-2 transition-all duration-300 group shadow-xl"
+                            >
+                                <div className="flex justify-between items-center mb-10">
+                                    <h3 className="text-xl font-bold group-hover:text-teal-500 transition-colors">
+                                        {t.rich(`${activeTab}.${idx}.title`, {
+                                            tooltip: (chunks) => (
+                                                <span className="text-xs inline-block transition-transform duration-300 hover:rotate-360 hover:cursor-help">
+                                                    {chunks}
+                                                </span>
+                                            )
+                                        })}
+                                    </h3>
+
+                                    <div className="flex gap-3">
+                                        {t(`${activeTab}.${idx}.website`) && (
+                                            <a href={t(`${activeTab}.${idx}.website`)} target="_blank" rel="noopener noreferrer" className="h-5 w-5 text-gray-400 hover:text-white transition-all">
+                                                <ExternalIcon />
+                                            </a>
+                                        )}
+                                        {t(`${activeTab}.${idx}.repository`) && (
+                                            <a href={t(`${activeTab}.${idx}.repository`)} target="_blank" rel="noopener noreferrer" className="h-5 w-5 text-gray-400 hover:text-white transition-all">
+                                                <GithubIcon />
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+
+                                <p className="text-muted-foreground mb-10 leading-relaxed text-gray-400">
+                                    {t.rich(`${activeTab}.${idx}.description`, {
+                                        giphy: (chunks) => <CustomLink href="https://developers.giphy.com">{chunks}</CustomLink>,
+                                        merdarko: (chunks) => <CustomLink href="https://github.com/MerDark0">{chunks}</CustomLink>,
+                                        codigo: (chunks) => <CustomLink href="https://www.youtube.com/watch?v=ezYDeaMivH8&list=PLx2nia7-PgoDk8pZ1YG8wtw5A8LH2kz96">{chunks}</CustomLink>,
+                                        spotify: (chunks) => <CustomLink href="https://spotify.com">{chunks}</CustomLink>,
+                                        selfbook: (chunks) => <CustomLink href="https://selfbook.com/">{chunks}</CustomLink>,
+                                        sanity: (chunks) => <CustomLink href="https://www.sanity.io/">{chunks}</CustomLink>,
+                                        salesiq: (chunks) => <CustomLink href="https://www.zoho.com/salesiq/">{chunks}</CustomLink>
                                     })}
-                                </h3>
+                                </p>
 
-                                <div className="flex gap-3">
-                                    {/* Obtenemos valores directos con t() */}
-                                    {t(`${activeTab}.${idx}.website`) && (
-                                        <a href={t(`${activeTab}.${idx}.website`)} target="_blank" rel="noopener noreferrer" className="h-5 w-5 fill-current text-gray-400 hover:text-white hover:-translate-y-0.5  transition-all">
-                                            <ExternalIcon />
-                                        </a>
-                                    )}
-                                    {t(`${activeTab}.${idx}.repository`) && (
-                                        <a href={t(`${activeTab}.${idx}.repository`)} target="_blank" rel="noopener noreferrer" className="h-5 w-5 fill-current text-gray-400 hover:text-white hover:-translate-y-0.5 duration-200 transition-all">
-                                            <GithubIcon />
-                                        </a>
-                                    )}
+                                {t(`${activeTab}.${idx}.highlights`) && (
+                                    <div className="mb-5">
+                                        <p className="text-sm text-gray-500 italic">
+                                            {t(`${activeTab}.${idx}.highlights`)}
+                                        </p>
+                                    </div>
+                                )}
+
+                                <div className="flex flex-wrap gap-3">
+                                    {(t.raw(`${activeTab}.${idx}.tech`) as string[]).map((tech, tidx) => (
+                                        <span key={tidx} className="inline-block px-3 py-1 bg-gray-900 rounded text-teal-500 text-xs font-medium">
+                                            {tech}
+                                        </span>
+                                    ))}
                                 </div>
-                            </div>
-
-                            {/* Usamos t.rich para cada link, debido a una limitación en el uso de props
-                            https://next-intl.dev/docs/usage/translations#rich-text-attributes */}
-
-                            <p className="text-muted-foreground mb-10 leading-relaxed text-gray-400">
-                                {t.rich(`${activeTab}.${idx}.description`, {
-                                    giphy: (chunks) => <CustomLink href="https://developers.giphy.com">{chunks}</CustomLink>,
-                                    merdarko: (chunks) => <CustomLink href="https://github.com/MerDark0">{chunks}</CustomLink>,
-                                    codigo: (chunks) => <CustomLink href="https://www.youtube.com/watch?v=ezYDeaMivH8&list=PLx2nia7-PgoDk8pZ1YG8wtw5A8LH2kz96">{chunks}</CustomLink>,
-                                    spotify: (chunks) => <CustomLink href="https://developer.spotify.com/">{chunks}</CustomLink>,
-                                    selfbook: (chunks) => <CustomLink href="https://selfbook.com/">{chunks}</CustomLink>,
-                                    sanity: (chunks) => <CustomLink href="https://www.sanity.io/">{chunks}</CustomLink>,
-                                    salesiq: (chunks) => <CustomLink href="https://www.zoho.com/salesiq/">{chunks}</CustomLink>
-                                })}
-                            </p>
-
-                            {t(`${activeTab}.${idx}.highlights`) && (
-                                <div className="mb-5">
-                                    <p className="text-sm text-gray-500 italic">
-                                        {t(`${activeTab}.${idx}.highlights`)}
-                                    </p>
-                                </div>
-                            )}
-
-                            <div className="flex flex-wrap gap-3">
-                                {/* Mapeamos el array de tecnologías que viene del JSON */}
-                                {(t.raw(`${activeTab}.${idx}.tech`) as string[]).map((tech, tidx) => (
-                                    <span key={tidx} className="inline-block px-3 py-1 bg-gray-900 rounded text-teal-500 text-xs font-medium">
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
+                </motion.div>
             </div>
         </section>
     )

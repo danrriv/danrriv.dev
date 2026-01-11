@@ -1,9 +1,13 @@
 {
     "About": {
-        "title": "About Me",
-        "content": "Hi! I'm Daniel, a software developer currently working in \"Digital Transformation\", where I build internal tools and provide technical support for users at Andean.",
-        "content2": "I entered the tech world almost by accident, my initial plan was to study psychology, but I ended up surprising myself by genuinely enjoying the process of building applications from scratch, solving problems, and turning ideas into something real… even staying up late because of a bug.",
-        "content3": "I'm especially interested in growing as a backend developer. I’m motivated by learning new things and taking on challenges that push my knowledge further. Every time I research something, I realize there’s an entire universe of topics to explore. It can be overwhelming, sure, but I think that’s the beauty of this career: it changes, evolves, and forces you to grow with it. It also teaches you patience… because, wow, you really need it.",
-        "content4": "Outside of work, I’m a calm person — I think a lot, laugh easily, and enjoy those curious coincidences life likes to throw my way."
+        "title": "About me",
+        "content": "Hi! I’m Daniel, a software developer currently working in \"Digital Transformation\", where <bold>I build internal tools and provide technical support to users at Andean.</bold>",
+        "content2": "I entered the IT world almost by accident. My original plan was to study psychology, but I ended up surprising myself by genuinely enjoying building applications from scratch and turning ideas into something real—even staying up late to fix a bug.",
+        "content3": "I’m particularly interested in growing as a <bold>backend developer</bold>. I’m highly motivated by learning new things and tackling challenges that push my knowledge further. Every time I learn something new and dig a bit deeper, I realize how vast this field is—it can be overwhelming, but I feel that’s part of the charm. <bold>The constant change and growth are what make this career exciting and rewarding.</bold>",
+        "content4": "Outside of work, I’m calm, thoughtful, and quick to laugh. I enjoy those rare coincidences life puts in my path. <bold>I like listening to people, understanding how they think, and finding that human spark that makes conversations truly meaningful.</bold>",
+        "topLabel": "My current favorite songs",
+        "recentLabel": "Recently played",
+        "tech": "Some technologies I use",
+        "why": "Why not?"
     }
 }

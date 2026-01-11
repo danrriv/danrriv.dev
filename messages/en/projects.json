@@ -1,13 +1,13 @@
 {
   "Projects": {
-    "title": "Some of my projects",
+    "title": "Featured projects",
     "work_label": "Work",
     "personal_label": "Personal",
     "work": [
       {
         "title": "Titilaka",
-        "description": "Fullstack application for managing users and permissions with an intuitive and secure interface.",
-        "highlights": "Granular access control implementation",
+        "description": "Website for one of Andean’s properties, featuring integrations with <selfbook>Selfbook</selfbook> and <salesiq>Zoho SalesIQ</salesiq>.",
+        "highlights": "Modernized the site, which was previously built using a CMS",
         "tech": [
           "Astro",
           "Tailwind CSS"
@@ -18,11 +18,12 @@
       },
       {
         "title": "Travel Professional's Site",
-        "description": "Analytics dashboard with real-time data visualization and exportable reports.",
-        "highlights": "Processing 100k+ records with query optimization",
+        "description": "Platform for B2B agents and press at Andean. It uses Spring Boot as middleware to handle business logic and authentication, and integrates <sanity>Sanity</sanity> as a CMS.",
+        "highlights": "Headless CMS integration and middleware usage",
         "tech": [
-          "Astro",
-          "Tailwind CSS"
+          "Angular",
+          "Spring Boot",
+          "Sanity"
         ],
         "image": "",
         "website": "https://info.andean.travel",
@@ -30,32 +31,33 @@
       },
       {
         "title": "Complaints Book",
-        "description": "Microservices architecture with Spring Boot focused on performance and scalability.",
-        "highlights": "Distributed caching and rate limiting",
+        "description": "Digital complaints book for Andean that digitized the process while complying with regulations and supporting localization.",
+        "highlights": "Process digitization and regulatory compliance",
         "tech": [
+          "Angular",
           "Spring Boot"
         ],
         "image": "",
-        "website": "https://info.andean.travel",
+        "website": "https://libroreclamaciones.andean.travel/",
         "repository": ""
       },
       {
         "title": "Intranet",
-        "description": "Modern frontend application with complex forms and advanced validations.",
-        "highlights": "Reusable components and shared state",
+        "description": "Modular internal intranet for Andean, designed to scale and support internal processes across different departments.",
+        "highlights": "Modular and scalable",
         "tech": [
-          "Astro",
-          "Tailwind CSS"
+          "Angular",
+          "Spring Boot"
         ],
         "image": "",
-        "website": "https://info.andean.travel",
+        "website": "",
         "repository": ""
       }
     ],
     "personal": [
       {
-        "title": "Giphy Searcher",
-        "description": "A simple GIF search engine built with the <link href='https://developers.giphy.com'>Giphy API</link>. It includes search history, language switching, and was originally created for a technical test.",
+        "title": "Giphy Search",
+        "description": "A simple GIF search tool built with the <giphy>Giphy API</giphy>. It includes search history, language switching, and was originally created as a technical test.",
         "highlights": "External API integration",
         "tech": [
           "Angular",
@@ -67,21 +69,29 @@
       },
       {
         "title": "DSTR-Santa-Natura",
-        "description": "Dynamic blog with content editor, categories, and comment system.",
-        "highlights": "SEO optimized and fast loading",
-        "tech": [],
+        "description": "Sales and inventory system for a local business, developed together with <merdarko>MerDark0</merdarko>, using the <codigo>Codigo Estudiante</codigo> project as a reference.",
+        "highlights": "Inventory and sales management",
+        "tech": [
+          ".NET",
+          "SQL Server",
+          "Win Forms"
+        ],
         "image": "",
         "website": "",
-        "repository": ""
+        "repository": "https://github.com/danrriv/DSTR-Santa-Natura"
       },
       {
         "title": "This site <tooltip>(?)</tooltip>",
-        "description": "Productivity application with real-time collaboration and synchronization.",
-        "highlights": "It's open source; if you liked it, you can use it as a template. :)",
-        "tech": [],
+        "description": "Personal portfolio website developed as a Next.js practice project. I added <spotify>Spotify</spotify> integration… just because.",
+        "highlights": "It’s open source; if you like it, feel free to use it as a template. :)",
+        "tech": [
+          "Next.js",
+          "Tailwind CSS",
+          "Spotify API"
+        ],
         "image": "",
         "website": "",
-        "repository": ""
+        "repository": "https://github.com/danrriv/danrriv.dev"
       }
     ]
   }

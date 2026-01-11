@@ -19,11 +19,11 @@ const getAccessToken = async () => {
         return { access_token: cachedToken };
     }
 
-    // 2. Si no hay token o expiró, pedir uno nuevo (como hiciste en Postman)
+    // 2. Si no hay token o expiró, pedir uno nuevo
     const response = await fetch(TOKEN_ENDPOINT, {
         method: 'POST',
         headers: {
-            // Basic Auth: Postman lo hace automático, aquí lo hacemos manual
+            // Basic Auth
             Authorization: `Basic ${Buffer.from(`${client_id}:${client_secret}`).toString('base64')}`,
             'Content-Type': 'application/x-www-form-urlencoded',
         },
