@@ -1,8 +1,8 @@
 // components/about/AboutContent.tsx
 "use client"
 
-import { motion } from "framer-motion"
-import { ReactNode } from "react"
+import { motion } from 'motion/react'; 
+import { ReactNode } from "react";
 
 export default function AboutContent({
     children,

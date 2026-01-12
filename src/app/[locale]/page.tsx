@@ -1,10 +1,10 @@
-import Header from "@/components/ui/header/header";
-import Footer from "@/components/ui/footer/footer";
+import Header from "@/components/ui/content/header/header";
+import Footer from "@/components/ui/content/footer";
 import SocialSticky from "@/components/ui/social";
-import Experience from "@/components/ui/experience";
-import Projects from "@/components/ui/projects";
-import About from "@/components/ui/about/about";
-import Hero from "@/components/ui/hero/hero";
+import Experience from "@/components/ui/content/experience";
+import About from "@/components/ui/content/about/about";
+import Hero from "@/components/ui/content/hero";
+import Projects from "@/components/ui/content/projects";
 
 export default function HomePage() {
   return (

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"
-import SwitchLang from "../switch-lang"
+import SwitchLang from "../../switch-lang"
 
 export default function Footer() {
     const t = useTranslations("Footer")

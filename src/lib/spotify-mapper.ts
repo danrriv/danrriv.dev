@@ -1,6 +1,6 @@
-import { TopTrack } from "./types/spotify";
+import { SpotifyTrack } from "./types/spotify";
 
-export function mapToTopTracks(items: any[]): TopTrack[] {
+export function mapToTopTracks(items: any[]): SpotifyTrack[] {
   // Validamos que items sea un array para evitar errores de ejecución
   if (!Array.isArray(items)) return [];
 
@@ -18,7 +18,7 @@ export function mapToTopTracks(items: any[]): TopTrack[] {
   });
 }
 
-export function mapToRecentTracks(items: any[]): TopTrack[] {
+export function mapToRecentTracks(items: any[]): SpotifyTrack[] {
   // Validamos que items sea un array para evitar errores de ejecución
   if (!Array.isArray(items)) return [];
 

@@ -1,6 +1,6 @@
 'use client';
 import NavSticky from "./header-nav";
-import SwitchLang from "../switch-lang";
+import SwitchLang from "../../../switch-lang";
 
 export default function Header() {
 

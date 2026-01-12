@@ -2,6 +2,10 @@
 import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
+/**
+ * 
+ * Solo soporta EN/ES, alterna entre ambos
+ */
 export default function SwitchLang() {
     const locale = useLocale();
     const pathname = usePathname();

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion'; // Importamos motion
+import { motion } from 'motion/react';
 
 export default function NavSticky() {
     const t = useTranslations('NavSticky');
