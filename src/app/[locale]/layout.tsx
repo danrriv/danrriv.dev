@@ -25,6 +25,8 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+/* https://next-intl.dev/docs/routing/setup#layout */
+/* https://next-intl.dev/docs/getting-started/app-router#layout */
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
 
@@ -37,6 +39,7 @@ export default async function RootLayout({ children, params }: Props) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>

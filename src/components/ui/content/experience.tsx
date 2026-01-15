@@ -17,6 +17,7 @@ interface ExperienceItem {
 }
 
 export default function Experience() {
+    /* Traducciones */
     const t = useTranslations('Experience');
     const n = useTranslations('NavSticky');
     const experiences = t.raw('experiences') as ExperienceItem[];

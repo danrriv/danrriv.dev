@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className="h-22 flex items-center justify-between px-4">
-      {/* Logo con cursor */}
+      {/* Logo con cursor intermitente */}
       <a href="/">
         <span className="text-xl md:pl-3 md:visible invisible hover:text-teal-500 transition-colors duration-300 font-mono text-white">
           &gt;<i className="cursor-blink">_</i>

@@ -6,6 +6,9 @@ import About from "@/components/ui/content/about/about";
 import Hero from "@/components/ui/content/hero";
 import Projects from "@/components/ui/content/projects";
 
+/**
+ * Constuimos todo el sitio con los componentes que creamos
+ */
 export default function HomePage() {
   return (
     <div className="bg-gray-900">

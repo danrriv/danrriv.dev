@@ -3,8 +3,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 
 /**
- * 
- * Solo soporta EN/ES, alterna entre ambos
+ * Solo soporta EN/ES, alterna entre ambos además de estar estilizado.
  */
 export default function SwitchLang() {
     const locale = useLocale();

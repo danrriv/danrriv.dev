@@ -1,9 +1,11 @@
-// components/about/AboutContent.tsx
 "use client"
 
 import { motion } from 'motion/react'; 
 import { ReactNode } from "react";
 
+/**
+ * Componente Acerca de Mí, recibe datos para poder renderizar
+ */
 export default function AboutContent({
     children,
     title,

@@ -1,14 +1,17 @@
 "use client";
-import { TopTrack } from "@/lib/types/spotify";
+import { SpotifyTrack } from "@/lib/types/spotify";
 import { useState } from "react";
 
 interface SpotifyWidgetProps {
-    topTracksLabel?: string;    // El '?' indica que es opcional
+    topTracksLabel?: string;
     recentTracksLabel?: string;
-    top: TopTrack[];
-    recent: TopTrack[];
+    top: SpotifyTrack[];
+    recent: SpotifyTrack[];
 }
 
+/**
+ * Widget de Spotify que muestra las canciones más escuchadas y las recientes.
+ */
 export default function SpotifyWidget({ topTracksLabel, recentTracksLabel, top, recent }: SpotifyWidgetProps) {
 
     const [view, setView] = useState("top");

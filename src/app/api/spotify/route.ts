@@ -1,8 +1,0 @@
-import { getNowPlaying } from '@/lib/server/spotify';
-import { NextResponse } from 'next/server';
-
-// GET /api/spotify
-export async function GET() {
-  const data = await getNowPlaying();
-  return NextResponse.json(data);
-}

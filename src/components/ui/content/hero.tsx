@@ -4,11 +4,15 @@ import { motion } from "motion/react"
 import { useTranslations } from "next-intl"
 import { useState, useEffect } from "react"
 
+/**
+ * Hero con animación de escritura y CTA
+ */
 export default function Hero() {
-  /* Translation */
+  /* Traducciones */
   const t = useTranslations('Hero')
   const n = useTranslations('NavSticky')
 
+  /* Animation Variants */
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -40,7 +44,7 @@ export default function Hero() {
   const [isIdle, setIsIdle] = useState(false)
 
   useEffect(() => {
-    const mql = window.matchMedia("(max-width: 820px)")
+    const mql = window.matchMedia("(max-width: 820px)") // Ajusta el valor según tus necesidades
     setIsSm(mql.matches)
     const handler = (e: MediaQueryListEvent) => setIsSm(e.matches)
     mql.addEventListener("change", handler)
