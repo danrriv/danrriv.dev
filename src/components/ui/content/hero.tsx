@@ -35,7 +35,7 @@ export default function Hero() {
   const [loopIndex, setLoopIndex] = useState(0)
   const [isSm, setIsSm] = useState(false)
 
-  const words = ["danrriv.", "Daniel Rodriguez."] // Palabras a escribir
+  const words = ["danrriv.", "Daniel Rodriguez."] // Palabras a escribir (aquí puedes agregar más o modificarlas)
   const typingSpeed = 100
   const deletingSpeed = 50
   const pauseBetween = 4000
