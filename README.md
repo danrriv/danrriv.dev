@@ -112,4 +112,3 @@ SPOTIFY_REFRESH_TOKEN=TU_REFRESH_TOKEN
 ## Observaciones
 * Tome inspiración de los proyectos de [Brittany Chang](https://v4.brittanychiang.com) y [midudev](https://porfolio.dev), agregando detalles adicionales como el widget de Spotify, y localización.
 * Lo realicé como una práctica de Nextjs, si hay algo que mejorar, siéntete libre de hacerlo.
-* Me apoye de [Kimi](https://www.kimi.com) para resumir documentación, es muy buena por si le quieres echar un ojo.
